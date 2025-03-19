@@ -1,31 +1,68 @@
-.navbar{
+.navbar {
     width: 100%;
-    height: 60px;
     display: flex;
-    justify-content: end;
+    justify-content: center;
     align-items: center;
+    flex-direction: column;
+    padding: 0;
 
-    .tabs{
-        padding-right: 20px;
+    .header-box {
+        width: 100%;
+        font-family: AnandaBlack;
         display: flex;
-        gap: 10px;
-        justify-content: space-evenly;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
 
-        button {
-            font-size: 24px;
-            font-weight: bold;
-            background: none;
-            border: none;
-            color: #CCCCCC;
-            border-radius: 25px; 
-            padding: 10px 20px;
-            cursor: pointer;
+        .logo{
+            width: 15vw;
+            height: auto;
+        }
+    }
 
-            &:hover{
-                cursor: pointer;
-                background-color: rgba(170, 170, 170, 0.1);
-                border: 2px solid inherit;
-                transition: 0.5s ease;
+    .links-box {
+        width: 100%;
+        height: auto;
+
+        .links {
+            width: 100%;
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .link {
+                padding: 8px 0px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                height: 30px; 
+                
+                .link-container{
+                    height: 100%;
+                    width: 100%;
+                    padding: 8px 40px;
+                    transition: 0.3s ease;
+                    text-decoration: none;
+                    color: black;
+
+                    &:hover{
+                        background-color: #DDDDDD;
+                    }
+
+                    .link-text {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        height: 100%; 
+                        text-decoration: none; 
+                        font-size: 16px; 
+                        line-height: 1; 
+                        color: inherit;
+                    }
+                }
             }
         }
     }

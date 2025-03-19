@@ -1,5 +1,4 @@
 import { useState } from "react";
-import './page.scss';
 
 function Home(){
 

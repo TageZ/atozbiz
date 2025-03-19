@@ -1,34 +1,34 @@
-import { useState } from 'react'
-import NavBar from './navbar'
-import './App.scss'
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import NavBar from './navbar';
+import './App.scss';
 import Home from './home';
+import Consultation from './consultation';
 
-function App() {
-
-  const pages = ['Home', 'About', 'Services', 'Contact'];
-  const [tab, setTab] = useState<string>(pages[0]);
-
-  const Page = () => {
-    switch (tab) {
-      case 'Home':
-        return <Home />;
-      case 'About':
-        // return <About />;
-      case 'Services':
-        // return <Services />;
-      case 'Contact':
-        // return <Contact />;
-      default:
-        return null;
-    }
-  };
-
-  return (
-    <>
-      <NavBar pages={pages} setTab={setTab}/>
-      <Page/>
-    </>
-  )
+function About() {
+  return <div>About Page</div>; // Replace with actual component
 }
 
-export default App
+function Services() {
+  return <div>Services Page</div>; // Replace with actual component
+}
+
+function Contact() {
+  return <div>Contact Page</div>; // Replace with actual component
+}
+
+function App() {
+  return (
+    <Router>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/consultation" element={<Consultation />} />
+      </Routes>
+    </Router>
+  );
+}
+
+export default App;
