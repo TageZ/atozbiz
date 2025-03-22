@@ -35,6 +35,15 @@
         width: 100%;
         height: auto;
 
+        .divider{
+            height: 2px;
+            width: 100%;
+            margin: 0;
+            border-width: 0;
+            background-color: #364b6e;
+            color: #364b6e;
+        }
+
         .links {
             width: 100%;
             list-style-type: none;
@@ -43,6 +52,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            background-color: #f2f0ef;
 
             .link {
                 padding: 8px 0px;
@@ -60,7 +70,7 @@
                     color: black;
 
                     &:hover{
-                        background-color: #DDDDDD;
+                        background-color: #CCCCCC;
                     }
 
                     .link-text {

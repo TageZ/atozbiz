@@ -36,7 +36,7 @@ function Navbar() {
                 </div>
             </div>
             <div className="links-box">
-                <hr style={{ width: '100%', margin: '0' }} />
+                <hr className="divider" />
                 <ul className="links">
                     {options.map((option, i) => (
                         <li className="link" key={i}>
@@ -46,7 +46,7 @@ function Navbar() {
                         </li>
                     ))}
                 </ul>
-                <hr style={{ width: '100%', margin: '0' }} />
+                <hr className="divider"/>
             </div>
         </div>
     );
