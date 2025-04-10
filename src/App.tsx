@@ -4,10 +4,8 @@ import './App.scss';
 import Home from './home';
 import Consultation from './consultation';
 import Contact from './contact';
-
-function About() {
-  return <div>About Page</div>; // Replace with actual component
-}
+import Footer from './footer';
+import About from './about';
 
 function Services() {
   return <div>Services Page</div>; // Replace with actual component
@@ -16,14 +14,17 @@ function Services() {
 function App() {
   return (
     <Router>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/services" element={<Services />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/consultation" element={<Consultation />} />
-      </Routes>
+      <NavBar />  
+      <div className="page-body">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/services" element={<Services />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/consultation" element={<Consultation />} />
+        </Routes>
+      </div>
+      <Footer/>
     </Router>
   );
 }

@@ -15,12 +15,18 @@ function Consultation() {
   }, []);
 
   return (
-    <div
-      ref={calendlyRef}
-      className="calendly-inline-widget"
-      data-url="https://calendly.com/amber-atozbiz/30min"
-      style={{ minWidth: "320px", height: "700px" }}
-    />
+    <div className="consultation-wrapper"
+      style={{
+        width: "100%",
+      }}
+    >
+      <div
+        ref={calendlyRef}
+        className="calendly-inline-widget"
+        data-url="https://calendly.com/amber-atozbiz/30min"
+        style={{ minWidth: "320px", height: "700px" }}
+      />
+    </div>
   );
 };
 

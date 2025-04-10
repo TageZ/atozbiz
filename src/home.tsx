@@ -2,7 +2,7 @@ function Home(){
 
     return (
         <div className="page" aria-label="home">
-            <div className="logo-container">
+            <div className="home-container">
                 
             </div>
         </div>

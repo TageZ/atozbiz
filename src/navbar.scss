@@ -13,10 +13,11 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+        height: 120px;
 
         .header-info{
-            width: 12vw;
-            font-size: 20px;
+            width: 200px;
+            font-size: 16px;
 
             .location, .phone, .linked-in{
                 display: flex;
@@ -26,8 +27,8 @@
         }
 
         .logo{
-            width: 15vw;
-            height: auto;
+            width: auto;
+            height: 80%;
         }
     }
 
@@ -40,7 +41,7 @@
             width: 100%;
             margin: 0;
             border-width: 0;
-            background-color: #364b6e;
+            background-color: #3A6EA5;
             color: #364b6e;
         }
 
@@ -52,7 +53,7 @@
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: #f2f0ef;
+            background-color: #F8F9FA;
 
             .link {
                 padding: 8px 0px;
@@ -70,7 +71,7 @@
                     color: black;
 
                     &:hover{
-                        background-color: #CCCCCC;
+                        background-color: #D1D5DB;
                     }
 
                     .link-text {
