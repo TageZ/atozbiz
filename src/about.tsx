@@ -1,6 +1,5 @@
 import './about.scss';
 import headshot from './assets/az-headshot.jpg';
-import logo from './assets/AtoZ_Logo.png';
 
 function About(){
 
