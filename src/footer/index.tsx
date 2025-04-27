@@ -1,5 +1,5 @@
 import './styles.scss';
-import logo from '../assets/AtoZ_Logo.png';
+import logo from '../assets/transparent.png';
 import { FaLinkedin } from "react-icons/fa";
 
 function Footer(){
@@ -34,7 +34,7 @@ function Footer(){
                 </div>
                 <hr className="divider"/>
                 <div className="footer-bottom">
-                    <span>© A to Z Buisness Solutions 2025 | All rights reserved</span>
+                    <span>© A to Z Business Solutions 2025 | All rights reserved</span>
                 </div>
             </div>
         </footer>

@@ -18,9 +18,9 @@ function About(){
 
                 <div className="about-text-container">
                     <span className="about-title">About the Founder</span>
-                    <span className="about-text">The Principal/CEO of A to Z Business Solutions is Amber Zerby. She graduated from North Park University in Chicago in 1999 with a Bachelor of Science (BS) in Accounting.</span>
-                    <span className="about-text">Amber has over two decades of experience in the business world and founded A to Z Business Solutions in 2022.</span>
-                    <span className="about-text">She has lived in the Chicago area her whole life, and currently lives in Saint Charles, IL with her husband. She also has two children who are both in college.</span>
+                    <span className="about-text">Amber Zerby is the Founder and Principal of AtoZ Business Solutions. With over 20 years of experience in accounting, operations, and executive support, Amber brings a deep understanding of business fundamentals and a commitment to excellence in every engagement.</span>
+                    <span className="about-text">She earned her Bachelor of Science in Accounting from North Park University in Chicago in 1999 and has since built a career rooted in precision, trust, and operational leadership. In 2022, Amber launched AtoZ Business Solutions to provide high-level support to executives and organizations needing reliable, confidential, and agile assistance across key business functions.</span>
+                    <span className="about-text">A lifelong resident of the Chicago area, Amber currently resides in Saint Charles, IL with her husband. She is also a proud mother of two young adult sons.</span>
                 </div>
             </div>
         </div>
