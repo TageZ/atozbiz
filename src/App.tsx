@@ -6,10 +6,7 @@ import Consultation from './consultation';
 import Contact from './contact';
 import Footer from './footer';
 import About from './about';
-
-function Services() {
-  return <div>Services Page</div>; // Replace with actual component
-}
+import Services from './services/index';
 
 function App() {
   return (
