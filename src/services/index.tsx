@@ -67,16 +67,18 @@ function Services(){
                         ))}
                     </ul>
                 </div>
-                <div className="tools-wrapper">
-                    <div className="tools-header-container">
-                        <h2 className="tools-header">Platform Proficiency</h2>
-                        <span className="tools-text">We work confidently across a range of platforms and systems, including:</span>
-                    </div>
+                <div className="tools-box">
+                    <div className="tools-wrapper">
+                        <div className="tools-header-container">
+                            <h2 className="tools-header">Platform Proficiency</h2>
+                            <span className="tools-text">We work confidently across a range of platforms and systems, including:</span>
+                        </div>
 
-                    <div className="tools-grid">
-                        {tools.map((tool, i) => (
-                            <div className="tool" key={i} style={{backgroundColor: tool.color}}><span className="tool-name">{tool.name}</span></div>
-                        ))}
+                        <div className="tools-grid">
+                            {tools.map((tool, i) => (
+                                <div className="tool" key={i} style={{backgroundColor: tool.color}}><span className="tool-name">{tool.name}</span></div>
+                            ))}
+                        </div>
                     </div>
                 </div>
             </div>
