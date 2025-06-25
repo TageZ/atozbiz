@@ -1,87 +1,159 @@
-.services-wrapper{
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.services-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  padding: 40px 0px;
+
+  .services-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 80%;
+    gap: 1rem;
+    text-align: center;
+
+    .service {
+      display: flex;
+      flex-direction: column;
+      padding: 30px 10px;
+      background-color: #ececec;
+      gap: 20px;
+      border-radius: 12px;
+
+      .service-header {
+        margin: 0;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+      }
+
+      .service-body {
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+      }
+
+      &:nth-child(1) {
+        .service-header { animation-delay: 0s; }
+        .service-body { animation-delay: 0.1s; }
+      }
+      &:nth-child(2) {
+        .service-header { animation-delay: 0.2s; }
+        .service-body { animation-delay: 0.3s; }
+      }
+      &:nth-child(3) {
+        .service-header { animation-delay: 0.4s; }
+        .service-body { animation-delay: 0.5s; }
+      }
+      &:nth-child(4) {
+        .service-header { animation-delay: 0.6s; }
+        .service-body { animation-delay: 0.7s; }
+      }
+      &:nth-child(5) {
+        .service-header { animation-delay: 0.8s; }
+        .service-body { animation-delay: 0.9s; }
+      }
+    }
+  }
+
+  .specialties-tools-box {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    width: 80%;
+    justify-content: space-between;
     gap: 40px;
-    padding: 40px 0px;
 
-    .services-grid{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        width: 80%;
-        gap: 1rem;
-        text-align: center;
+    .specialties {
+      background-color: #ececec;
+      border-radius: 12px;
 
-        .service{
-            display: flex;
-            flex-direction: column;
-            padding: 30px 10px;
-            background-color: #ECECEC;
-            gap: 20px;
-            border-radius: 12px;
+      .specialties-header {
+        padding: 20px 20px 0;
+        margin: 0;
+        opacity: 0;
+        animation: fadeInUp 0.8s ease forwards;
+        animation-delay: 0.2s;
+      }
 
-            .service-header{
-                margin: 0;
-            }
-        }
-    }
-
-    .specialties-tools-box{
+      .specialties-list {
+        list-style: none;
         display: flex;
-        width: 80%;
-        justify-content: space-between;
-        gap: 40px;
+        flex-direction: column;
+        gap: 12px;
+        padding: 20px;
+        margin: 0;
 
-        .specialties{
-            background-color: #ECECEC;
-            border-radius: 12px;
+        .specialty {
+          font-size: 24px;
+          opacity: 0;
+          animation: fadeInUp 0.8s ease forwards;
 
-            .specialties-header{
-                padding: 20px 20px 0;
-                margin: 0;
+          @for $i from 1 through 10 {
+            &:nth-child(#{$i}) {
+              animation-delay: 0.1s * $i + 0.2s;
             }
-
-            .specialties-list{
-                list-style: none;
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-                padding: 20px;
-                margin: 0;
-                .specialty{
-                    font-size: 24px;
-                }
-            }
+          }
         }
-
-        .tools-wrapper{
-            .tools-header-container{
-                padding: 0px 0px 20px;
-
-            }
-
-            .tools-grid{
-                display: grid;
-                grid-template-columns: repeat(3, 1fr);
-                gap: 20px;
-                color: white;
-
-                .tool{
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    border-radius: 12px;
-                    height: 80px;
-
-                    .tool-name{
-                        padding: 0px 12px;
-                        font-size: 24px;
-                        text-align: center;
-                        font-weight: bold;
-                    }
-                }
-            }
-        }
+      }
     }
+
+    .tools-wrapper {
+      .tools-header-container {
+        padding: 0px 0px 20px;
+
+        .tools-header,
+        .tools-text {
+          opacity: 0;
+          animation: fadeInUp 0.8s ease forwards;
+        }
+
+        .tools-header {
+          animation-delay: 0.3s;
+        }
+
+        .tools-text {
+          animation-delay: 0.4s;
+        }
+      }
+
+      .tools-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+        color: white;
+
+        .tool {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 12px;
+          height: 80px;
+
+          .tool-name {
+            padding: 0px 12px;
+            font-size: 24px;
+            text-align: center;
+            font-weight: bold;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease forwards;
+
+            @for $i from 1 through 18 {
+              &:nth-child(#{$i}) {
+                animation-delay: 0.05s * $i + 0.2s;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
 }
